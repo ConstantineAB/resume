@@ -1,0 +1,289 @@
+.section-description__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-description__inner__left {
+  width: 60%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.section-description__inner__left__title {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 24px;
+  color: #252525;
+}
+
+.section-description__inner__left__title.dark-theme {
+  color: #783AFA;
+}
+
+.section-description__inner__left__subtitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #464646;
+}
+
+.section-description__inner__left__subtitle.dark-theme {
+  color: #00ff00;
+}
+
+.section-description__inner__left__button {
+  width: 400px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffe8de;
+  border: 2px #FF5A00 solid;
+  border-radius: 4px;
+}
+
+.section-description__inner__left__button__a.dark-theme {
+  color: #783AFA !important;
+}
+
+.section-description__inner__left__button span {
+  margin-left: 10px;
+  font-size: 18;
+  font-weight: 700;
+  color: #FF5A00;
+}
+
+.section-description__inner__left__characterize {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-description__inner__left__characterize__left {
+  margin-left: 15px;
+}
+
+.section-description__inner__left__characterize__left__title {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.section-description__inner__left__characterize__left__title.dark-theme {
+  color: #783AFA;
+}
+
+.section-description__inner__left__characterize__left__subtitle {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-description__inner__left__characterize__left__subtitle.dark-theme {
+  color: #00ff00;
+}
+
+.section-description__inner__left__characterize__left__date {
+  min-width: 130px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.section-description__inner__left__characterize__left__date.dark-theme {
+  color: #00ff00;
+}
+
+.section-description__inner__left__characterize__left__button {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-description__inner__right {
+  padding: 30px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFE8DE;
+  border-radius: 10px;
+}
+
+.section-description__inner__right__title {
+  width: 100%;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #252525;
+}
+
+.section-description__inner__right__title.dark-theme {
+  color: #783AFA;
+}
+
+.section-description__inner__right__subtitle {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #464646;
+}
+
+.section-description__inner__right__subtitle.dark-theme {
+  color: #00ff00;
+}
+
+.section-description__inner__right__button {
+  width: 400px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffe8de;
+  border: 2px #FF5A00 solid;
+  border-radius: 4px;
+}
+
+.section-description__inner__right__button span {
+  margin-left: 10px;
+  font-size: 18;
+  font-weight: 700;
+  color: #FF5A00;
+}
+
+.section-description__inner__right img {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.section-description__inner__right.dark-theme {
+  background-color: #000050;
+}
+
+.subline {
+  width: 100%;
+  margin-left: 10px;
+  height: 1px;
+  background-color: #000;
+}
+
+.subline.dark-theme {
+  background-color: #00ff00;
+}
+
+@media (max-width: 1430px) {
+  .section-description__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-description__inner__right {
+    width: 50%;
+  }
+  .section-description__inner__right__title {
+    font-size: 35px;
+  }
+  .section-description__inner__right__subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 998px) {
+  .section-description__inner {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .section-description__inner__right {
+    width: 50%;
+  }
+  .section-description__inner__left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-description__inner__right {
+    width: 100%;
+  }
+  .section-description__inner__right__title {
+    font-size: 25px;
+  }
+  .section-description__inner__right__button {
+    width: 100%;
+  }
+  .section-description__inner__left {
+    padding: 15px;
+  }
+  .section-description__inner__left__title {
+    line-height: 30px;
+  }
+  .section-description__inner__left img {
+    width: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-description__inner {
+    padding-top: 15px;
+  }
+  .section-description__inner__right__title {
+    font-size: 20px;
+  }
+  .section-description__inner__right__subtitle {
+    font-size: 16px;
+  }
+  .section-description__inner__left__title {
+    font-size: 20px;
+  }
+  .section-description__inner__left__subtitle {
+    font-size: 16px;
+  }
+  .section-description__inner__left__characterize__left__subtitle {
+    font-size: 15px;
+  }
+  .section-description__inner__left__characterize__left__date {
+    min-width: 120px;
+  }
+}
+/*# sourceMappingURL=description.css.map */
