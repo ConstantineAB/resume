@@ -301,7 +301,7 @@ const Progects: FC<myProps> = ({ darkThemeBtn }) => {
                           className={
                             !darkThemeBtn ? 'card__body__link-1' : 'card__body__link-1 dark-theme'
                           }
-                          href="https://nuxt-storecom-production.up.railway.app/">
+                          href="https://nuxt-store-production.up.railway.app/">
                           Перейти на сайт
                         </a>
                       </motion.div>
