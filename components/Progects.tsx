@@ -211,6 +211,117 @@ const Progects: FC<myProps> = ({ darkThemeBtn }) => {
   return (
     <section className={!darkThemeBtn ? 'section-progects' : 'section-progects dark-theme'}>
       <div
+        className={!darkThemeBtn ? 'section-progects__item' : 'section-progects__item dark-theme'}>
+        <div onClick={() => useCard1(!card1)} className="card">
+          <div className={card1 ? 'card__inner' : 'card__inner is-flipped'}>
+            <div className="card__face card__face--front">
+              <img src="./images/leaflet-app.png" alt="" className="pp" />
+            </div>
+            <div className="card__face card__face--back">
+              <div className="card__content">
+                <div className={!darkThemeBtn ? 'card__header' : 'card__header dark-theme'}>
+                  <h2>leaflet-app</h2>
+                </div>
+                <div className="card__body">
+                  <h3>Ссылки</h3>
+                  <button>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+                      <a
+                        className={
+                          !darkThemeBtn ? 'card__body__link-1' : 'card__body__link-1 dark-theme'
+                        }
+                        href="http://leaflet-app.zzz.com.ua/">
+                        Перейти на сайт
+                      </a>
+                    </motion.div>
+                  </button>
+                  <button>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+                      <a
+                        className={
+                          !darkThemeBtn ? 'card__body__link-2' : 'card__body__link-2 dark-theme'
+                        }
+                        href="https://github.com/ConstantineAB/leaflet-app/">
+                        Исходный код
+                      </a>
+                    </motion.div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section-progects__item__description">
+          <div className="section-progects__item__description__inner">
+            <div
+              className={
+                !darkThemeBtn
+                  ? 'section-progects__item__description__inner__title'
+                  : 'section-progects__item__description__inner__title dark-theme'
+              }>
+              Приложение по отображению
+              <br />
+              заявок на перевозку.
+              <br />
+            </div>
+            <div
+              className={
+                !darkThemeBtn
+                  ? 'section-progects__item__description__inner__subtitle'
+                  : 'section-progects__item__description__inner__subtitle dark-theme'
+              }>
+              Я создал этот проект с нуля
+              <br />
+              на фреймворке React и библиотеке leaflet.
+            </div>
+            <div className="section-progects__item__description__comments">
+              <h3
+                className={
+                  !darkThemeBtn
+                    ? 'section-progects__item__description__comments__title'
+                    : 'section-progects__item__description__comments__title dark-theme'
+                }>
+                Комментарии
+              </h3>
+              {perekrestokComments.map((obj: any) => (
+                <Commentary key={obj.id} {...obj} darkThemeBtn={darkThemeBtn} />
+              ))}
+              <input
+                className={
+                  !darkThemeBtn
+                    ? 'section-progects__item__description__comments__input-name'
+                    : 'section-progects__item__description__comments__input-name dark-theme'
+                }
+                type="text"
+                placeholder="Введите свое имя"
+                value={perekrestokName}
+                onChange={(e) => setPerekrestokName(e.target.value)}
+              />
+              <input
+                className={
+                  !darkThemeBtn
+                    ? 'section-progects__item__description__comments__input-text'
+                    : 'section-progects__item__description__comments__input-text dark-theme'
+                }
+                type="text"
+                placeholder="Введите текст комментария"
+                value={perekrestokText}
+                onChange={(e) => setPerekrestokText(e.target.value)}
+              />
+              <button
+                className={
+                  !darkThemeBtn
+                    ? 'section-progects__item__description__comments__button'
+                    : 'section-progects__item__description__comments__button dark-theme'
+                }
+                onClick={postPerekrestokСomments}>
+                Отправить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
         className={
           !darkThemeBtn ? 'section-progects__item-2' : 'section-progects__item-2 dark-theme'
         }>
