@@ -9,7 +9,6 @@ import Progects from "../components/Progects";
 
 const Home: NextPage = () => {
   const [darkTheme, setDarkTheme] = useState(false);
-
   return (
     <div className={!darkTheme ? "wrapper" : "wrapper dark-theme"}>
       <Head>
